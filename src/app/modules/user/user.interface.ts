@@ -6,7 +6,7 @@ Admin="ADMIN",
 USER="USER",
 GUIDE="gUIDE"
 }
-export interface IauthProvider{
+export interface IAuthProvider{
 provider:string;
 providerId:string;
 }
@@ -26,13 +26,13 @@ export interface IUser{
    phonenumber ?: string;
    picture ?:string;
    address ?:string;
-   isDeleter ?:string;
+   isDeleted ?:string;
    isActive :Isactive;
-   isvarified?:string;
+    isVerified?:string;
    role:Role;
 
 
-auths:IauthProvider[]
+auths:IAuthProvider[]
 
 booking:Types.ObjectId[]
 guides ?:Types.ObjectId[]
